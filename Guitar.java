@@ -85,17 +85,23 @@ public class Testing {
 
 		ElectricGuitar strat = new ElectricGuitar(6, "fender", 25, true);
 		Guitar martin = new Guitar(6, "martin");
-		System.out.println("ElectricGuitar toString: ");
-		System.out.println(strat.toString());
-		System.out.println("Guitar toString: ");
+		System.out.println("Guitar (superclass) toString: ");
 		System.out.println(martin.toString());
+		System.out.println("");
+		System.out.println("ElectricGuitar (subclass) toString: ");
+		System.out.println(strat.toString());
+		System.out.println("");
+		System.out.println("Play Guitar: ");
+		martin.play();
+		System.out.println("");
+		System.out.println("Play ElectricGuitar (Overridden method): ");
+		strat.play();
+		System.out.println("");
 		strat.removeString();
 		strat.setVolume(75);
 		System.out.println("ElectricGuitar toString after removeString and setVolume: ");
 		System.out.println(strat.toString());
-		System.out.println("Play ElectricGuitar: ");
-		strat.play();
-		System.out.println("Play Guitar: ");
-		martin.play();
+
+
 	}
 }
