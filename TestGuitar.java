@@ -79,7 +79,7 @@ class ElectricGuitar extends Guitar {
 }
 
 
-public class Testing {
+public class TestGuitar {
 	public static void main(String args[])
 	{
 
